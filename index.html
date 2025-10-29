@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Job Application Tracker</h1>
+  <form id="jobForm">
+    <input type="text" id="company" placeholder="Company" required />
+    <input type="text" id="position" placeholder="Position" required />
+    <input type="date" id="applyDate" required />
+    <select id="status">
+      <option value="applied">Applied</option>
+      <option value="interview">Interview</option>
+      <option value="offer">Offer</option>
+      <option value="rejected">Rejected</option>
+    </select>
+    <button type="submit">Add / Update</button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Company</th><th>Position</th><th>Apply Date</th><th>Status</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="jobsTableBody"></tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+</html>
